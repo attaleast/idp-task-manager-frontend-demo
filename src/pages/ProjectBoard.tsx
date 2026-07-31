@@ -50,7 +50,7 @@ export const ProjectBoard = () => {
               {tasks.filter(t => t.status === 'in_progress').map(task => <TaskCard key={task.id} task={task} />)}
             </div>
             <div className="space-y-4">
-              <h3 className="font-semibold text-slat-600 uppercase text-sm tracking-wider">Done ({tasks.filter(t => t.status === 'done').lenght})</h3>
+              <h3 className="font-semibold text-slat-600 uppercase text-sm tracking-wider">Done ({tasks.filter(t => t.status === 'done').length})</h3>
               {tasks.filter(t => t.status === 'done').map(task => <TaskCard key={task.id} task={task} />)}
             </div>
         </div>
