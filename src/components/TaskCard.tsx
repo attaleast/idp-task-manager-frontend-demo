@@ -5,7 +5,7 @@ export const TaskCard({task}: {task: Task}) => {
   const statusConfig = {
     todo: { icon: <Circle size={18} />, color: 'text-slate-400', bg: 'bg-slate-50' },
     in_progress: { icon: <Loader size={18} />, color: 'text-bule-500', bg: 'bg-blue-50' },
-    done: { icon: <CheckCircle2 size={18} />, color: 'text-green-500', bg: 'bg-green-50'}
+    done: { icon: <CheckCircle2 size={18} />, color: 'text-green-500', bg: 'bg-green-50'},
   };
 
   const config = statusConfig[task.status];
