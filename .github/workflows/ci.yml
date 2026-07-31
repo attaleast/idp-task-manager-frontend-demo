@@ -31,3 +31,5 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           lables: ${{ steps.meta.outputs.labels }}
+          build-args: |
+            VITE_API_URL=https://tm-api.attalea.pw
