@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
-@tainwind utilities;
+@tailwind utilities;
 
 body {
-  @apply bg-surface text-slate-800 font-sans antialiased;
+  @apply bg-slate-50 text-slate-800 font-sans antialiased;
 }

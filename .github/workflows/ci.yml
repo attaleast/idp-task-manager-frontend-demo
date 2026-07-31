@@ -32,3 +32,4 @@ jobs:
           lables: ${{ steps.meta.outputs.labels }}
           build-args: |
             VITE_API_URL=https://tm-api.attalea.pw
+          no-cache: true
