@@ -1,8 +1,13 @@
+export type TaskStatus = 'todo' | 'in_progress' | 'done';
+
 export interface Task {
   id: string;
+  project_id: string;
   title: string;
   description: string;
-  status: 'todo' | 'in_progress' | 'done';
+  status: TaskStatus;
+  created_at: string;
+  updated_at: string;
 }
 
 export interface Project {
