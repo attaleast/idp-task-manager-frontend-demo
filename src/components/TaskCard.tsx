@@ -1,5 +1,5 @@
 import { CheckCircle2, Circle, Loader } from 'lucide-react';
-import { Task } from '../types';
+import type { Task } from '../types';
 
 export const TaskCard = ({ task }: { task: Task }) => {
   const statusConfig = {

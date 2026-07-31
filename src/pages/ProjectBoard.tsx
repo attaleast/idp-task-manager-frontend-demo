@@ -42,11 +42,11 @@ export const ProjectBoard = () => {
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="space-y-4">
-              <h3 className="font-semibold text-slat-600 uppercase text-sm tracking-wider">To Do ({tasks.filter(t => t.status === 'todo').lenght})</h3>
+              <h3 className="font-semibold text-slat-600 uppercase text-sm tracking-wider">To Do ({tasks.filter(t => t.status === 'todo').length})</h3>
               {tasks.filter(t => t.status === 'todo').map(task => <TaskCard key={task.id} task={task} />)}
             </div>
             <div className="space-y-4">
-              <h3 className="font-semibold text-slat-600 uppercase text-sm tracking-wider">In Progress ({tasks.filter(t => t.status === 'in_progress').lenght})</h3>
+              <h3 className="font-semibold text-slat-600 uppercase text-sm tracking-wider">In Progress ({tasks.filter(t => t.status === 'in_progress').length})</h3>
               {tasks.filter(t => t.status === 'in_progress').map(task => <TaskCard key={task.id} task={task} />)}
             </div>
             <div className="space-y-4">
